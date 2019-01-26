@@ -8,10 +8,11 @@ const ListGroup = props => {
     valueProperty,
     selectedItem
   } = props;
+
   if (!items) return null;
 
   return (
-    <div>
+    <div style={{ cursor: "pointer" }}>
       <ul className="list-group">
         {items.map(item => (
           <li
